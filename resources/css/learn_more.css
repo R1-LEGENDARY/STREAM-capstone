@@ -1,0 +1,175 @@
+/* STREAM Learn More Page Styles */
+
+/* Body & Typography */
+body {
+    font-family: 'Montserrat', 'Roboto', Arial, sans-serif;
+    background: linear-gradient(135deg, #e3f2fd 0%, #fff 100%);
+    color: #222;
+}
+
+h2, h4, .navbar-brand {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: #1976d2;
+}
+
+.navbar {
+    font-size: 1.1rem;
+}
+
+/* Cards */
+.card {
+    border-radius: 14px;
+    background: rgba(255, 255, 255, 0.85);
+    box-shadow: 0 4px 32px rgba(33, 150, 243, 0.08), 0 1.5px 4px rgba(0, 0, 0, 0.10);
+    border: 1.5px solid #bbdefb;
+    color: #222;
+}
+
+.mat-card {
+    border-radius: 14px;
+    min-height: 420px;
+}
+
+.shadow-sm {
+    box-shadow: 0 2px 12px rgba(33, 150, 243, 0.07);
+}
+
+/* Fish/Materials Images */
+.fish-img,
+.mat-img {
+    border-radius: 14px;
+    width: 100%;
+    height: 180px;
+    object-fit: contain;
+    background: #fff;
+    box-shadow: 0 8px 24px rgba(33, 150, 243, 0.10), 0 1.5px 4px rgba(0, 0, 0, 0.10);
+    border: 2px solid #bbdefb;
+    transition: transform 0.2s cubic-bezier(.4, 2, .6, 1), box-shadow 0.2s;
+    perspective: 600px;
+}
+
+.fish-card:hover .fish-img,
+.mat-card:hover .mat-img {
+    transform: scale(1.05) rotateX(8deg) rotateY(-8deg) translateY(-6px);
+    box-shadow: 0 16px 32px rgba(33, 150, 243, 0.18), 0 3px 8px rgba(0, 0, 0, 0.12);
+    border-color: #1976d2;
+}
+
+/* Section Anchors */
+.section-anchor {
+    scroll-margin-top: 90px;
+}
+
+/* Article Cards */
+.article-card {
+    background: rgba(25, 118, 210, 0.05);
+    border: 1.5px solid #90caf9;
+}
+
+.article-card .card-body {
+    display: flex;
+    flex-direction: column;
+}
+
+.article-card .learn-more-link {
+    color: #0d47a1;
+    font-weight: 600;
+    text-decoration: none;
+    transition: color 0.2s, text-decoration 0.2s;
+}
+
+.article-card .learn-more-link:hover {
+    color: #0a3570;
+    text-decoration: underline;
+}
+
+.article-card .section-heading {
+    font-size: 1rem;
+    font-weight: 700;
+    color: #1976d2;
+    text-transform: uppercase;
+    margin-bottom: 0.35rem;
+    letter-spacing: 0.05em;
+}
+
+.article-card .article-list {
+    padding-left: 1.1rem;
+}
+
+.article-card .article-list li::marker {
+    color: #2196f3;
+}
+
+.article-card blockquote {
+    font-size: 0.9rem;
+    font-style: italic;
+    color: #0a3570;
+    border-left: 3px solid #64b5f6;
+    padding-left: 0.75rem;
+    background: rgba(25, 118, 210, 0.05);
+    border-radius: 10px;
+    margin: 0.75rem 0 1rem;
+}
+
+@media (min-width: 768px) {
+    .bfar-article-card {
+        max-width: 100%;
+        margin-left: 0;
+    }
+}
+
+/* STREAM Logo */
+.stream-logo {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    letter-spacing: 2px;
+    font-size: 1.7rem;
+}
+
+.stream-logo span {
+    display: inline-block;
+}
+
+.stream-logo .T {
+    color: #2196f3;
+}
+
+.stream-logo .E {
+    color: #43a047;
+}
+
+.stream-logo .M {
+    color: #fbc02d;
+}
+
+.stream-logo-3d {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    letter-spacing: 2px;
+    font-size: 1.7rem;
+    color: #1976d2;
+    text-shadow: 2px 2px 0 #bbdefb, 4px 4px 8px rgba(33, 150, 243, 0.18), 0 6px 16px rgba(25, 118, 210, 0.15);
+}
+
+/* 3D Heading Styles */
+.learnmore-3d-title {
+    font-size: 2rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    color: #1976d2;
+    letter-spacing: 1.5px;
+    text-shadow: 2px 2px 0 #bbdefb, 4px 4px 8px rgba(33, 150, 243, 0.18), 0 6px 16px rgba(25, 118, 210, 0.15);
+    margin-bottom: 0.5rem;
+    line-height: 1.2;
+}
+
+.learnmore-3d-subtitle {
+    font-size: 1.25rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: #2196f3;
+    letter-spacing: 1px;
+    text-shadow: 1px 1px 0 #e3f2fd, 2px 2px 6px rgba(33, 150, 243, 0.10);
+    margin-bottom: 0.5rem;
+}
